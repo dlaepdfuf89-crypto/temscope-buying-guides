@@ -1,11 +1,14 @@
-# TEMSCOPE static site. GitHub source control only. NEVER commerce hosting on GitHub Pages.
+# TEMSCOPE registration-safe static site; source is dedicated to TEMSCOPE only.
+# No affiliate URLs are published until the exact new host is registered in Coupang Partners.
 services:
   - type: web
     runtime: static
     name: temscope-buying-guides
-    buildCommand: "echo TEMSCOPE-static-site-ready"
+    repo: https://github.com/dlaepdfuf89-crypto/temscope-buying-guides
+    branch: main
+    buildCommand: echo TEMSCOPE-static-site-ready
     staticPublishPath: .
-    autoDeployTrigger: off
+    autoDeployTrigger: 'off'
     headers:
       - path: /*
         name: X-Content-Type-Options
