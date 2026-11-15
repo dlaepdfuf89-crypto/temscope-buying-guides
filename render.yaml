@@ -1,0 +1,15 @@
+# TEMSCOPE static site. GitHub source control only. NEVER commerce hosting on GitHub Pages.
+services:
+  - type: web
+    runtime: static
+    name: temscope-buying-guides
+    buildCommand: "echo TEMSCOPE-static-site-ready"
+    staticPublishPath: .
+    autoDeployTrigger: off
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
