@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /
+Allow: /
+Sitemap: https://temscope-buying-guides.onrender.com/sitemap.xml
